@@ -1,159 +1,114 @@
-# Bitcoin Market Sentiment vs Trader Performance Analysis
+# 🚀 Bitcoin Sentiment vs Trader Performance Analysis
 
-## Objective
+<div align="center">
 
-The objective of this project is to analyze the relationship between Bitcoin market sentiment and trader performance using Hyperliquid historical trading data and the Fear & Greed Index.
+### 📊 Analyzing the Impact of Bitcoin Market Sentiment on Trader Performance
 
-This analysis explores how market psychology impacts:
-
-- Trader profitability
-- Trading volume
-- Risk-taking behavior
-- Buy/Sell activity
-- Market participation
-- Overall trading performance
-
-The project aims to uncover meaningful insights that can help build smarter trading strategies and improve decision-making during different market conditions.
+</div>
 
 ---
 
-# Datasets Used
+## 📌 Project Overview
 
-## 1. Bitcoin Fear & Greed Index Dataset
+This project explores the relationship between **Bitcoin market sentiment** and **trader performance** using:
 
-This dataset contains daily market sentiment classifications such as:
+| Dataset | Description |
+|---|---|
+| 📈 Hyperliquid Historical Data | Historical trader activity and trading performance |
+| 📊 Fear & Greed Index | Daily Bitcoin market sentiment classification |
 
-- Fear
-- Extreme Fear
-- Greed
-- Extreme Greed
+The goal of this analysis is to identify how market psychology influences:
 
-Columns used:
-- Date
-- Classification
-- Sentiment Value
+- 💰 Trader profitability  
+- 📈 Trading volume  
+- ⚠️ Risk-taking behavior  
+- 🔄 Buy/Sell activity  
+- 🧠 Market participation patterns  
 
----
-
-## 2. Hyperliquid Historical Trader Dataset
-
-This dataset contains historical trading activity information including:
-
-- Account
-- Symbol
-- Execution Price
-- Trade Size
-- Side (Buy/Sell)
-- Closed PnL
-- Leverage
-- Timestamp
-- Trading Fees
+> 📍 Complete preprocessing, analysis workflow, and implementation logic are available in `analysis.py`.
 
 ---
 
-# Technologies Used
+# 🛠️ Tech Stack
 
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
+<div align="center">
 
----
+| Technology | Usage |
+|---|---|
+| 🐍 Python | Core Programming |
+| 🐼 Pandas | Data Analysis |
+| 📊 Matplotlib | Data Visualization |
+| 🎨 Seaborn | Statistical Visualization |
 
-# Project Workflow
-
-The following steps were performed during the analysis:
-
-1. Data loading
-2. Data cleaning
-3. Date formatting
-4. Dataset merging
-5. Exploratory Data Analysis
-6. Sentiment-based trader analysis
-7. Profitability analysis
-8. Volatility analysis
-9. Visualization and insight generation
+</div>
 
 ---
 
-# Data Cleaning
+# ⚙️ Analysis Workflow
 
-The following preprocessing steps were performed:
-
-- Removed duplicate records
-- Converted timestamp columns into datetime format
-- Created a common date column for merging
-- Converted important columns into numeric format
-- Merged both datasets using trade dates
-
----
-
-# Exploratory Data Analysis
-
-The analysis focused on identifying patterns between market sentiment and trader behavior using multiple visualizations and statistical summaries.
-
-The following analyses were performed:
-
-- Market sentiment distribution
-- Average profit by sentiment
-- Trading volume analysis
-- Buy vs Sell behavior
-- Top profitable traders
-- Win rate analysis
-- Volatility analysis
-- Correlation analysis
-- Daily PnL trends
+| Step | Description |
+|---|---|
+| 1️⃣ | Data Cleaning |
+| 2️⃣ | Date Formatting |
+| 3️⃣ | Dataset Merging |
+| 4️⃣ | Exploratory Data Analysis |
+| 5️⃣ | Sentiment-Based Analysis |
+| 6️⃣ | Trader Performance Analysis |
+| 7️⃣ | Profitability Analysis |
+| 8️⃣ | Correlation Analysis |
+| 9️⃣ | Visualization & Insight Generation |
 
 ---
 
-# Visualizations
+# 📈 Visual Analysis
 
-## 1. Market Sentiment Distribution
+---
+
+## 📊 Market Sentiment Distribution
 
 ![Market Sentiment Distribution](images/sentiment_distribution.png)
 
-This chart shows the distribution of different market sentiment categories across the dataset.
+🔍 Shows the distribution of Fear and Greed sentiment categories across the dataset.
 
 ---
 
-## 2. Average Trader Profit by Sentiment
+## 💰 Average Trader Profit by Sentiment
 
 ![Average Trader Profit](images/pnl_by_sentiment.png)
 
-This visualization compares average trader profitability during different sentiment conditions.
+🔍 Compares average trader profitability during different sentiment conditions.
 
 ---
 
-## 3. Trading Volume Analysis
+## 📈 Trading Volume Analysis
 
 ![Trading Volume](images/trading_volume.png)
 
-This chart highlights how trading activity changes across Fear and Greed market conditions.
+🔍 Highlights how market sentiment impacts trading activity and participation.
 
 ---
 
-## 4. Buy vs Sell Activity
+## 🔄 Buy vs Sell Activity
 
-![Buy Sell Analysis](images/buy_sell_analysis.png)
+![Buy vs Sell Activity](images/buy_sell_analysis.png)
 
-This visualization compares buy and sell behavior under different market sentiment conditions.
+🔍 Compares Buy and Sell behavior during Fear and Greed market conditions.
 
 ---
 
-## 5. Top 10 Most Profitable Traders
+## 🏆 Top 10 Most Profitable Traders
 
 ![Top Traders](images/top_traders.png)
 
-This chart identifies the most profitable traders based on total closed PnL.
+🔍 Identifies traders with the highest cumulative profitability.
 
 ---
 
-## 6. Correlation Heatmap
+## 🔥 Correlation Heatmap
 
 ![Correlation Heatmap](images/correlation_heatmap.png)
 
-This heatmap shows relationships between key trading variables such as:
-
+🔍 Displays relationships between important trading metrics such as:
 - Execution Price
 - Trade Size
 - Closed PnL
@@ -162,59 +117,17 @@ This heatmap shows relationships between key trading variables such as:
 
 ---
 
-# Key Insights
+# ▶️ Setup & Execution
 
-- Market sentiment has a strong influence on trader behavior and profitability.
-
-- Greed periods generally showed higher average profits and stronger market participation.
-
-- Fear periods were associated with higher volatility and inconsistent trader performance.
-
-- Trading volume increased significantly during bullish market sentiment conditions.
-
-- Buy activity was generally stronger during Greed periods, while Fear periods triggered more defensive trading behavior.
-
-- A small number of traders contributed a large portion of overall profitability.
-
-- Some traders remained consistently profitable regardless of sentiment conditions, indicating disciplined trading strategies.
-
-- Profit volatility increased during uncertain market conditions.
-
-- Market psychology directly affected trader confidence and risk appetite.
-
-- Sentiment indicators such as the Fear & Greed Index can provide valuable signals for improving trading decisions.
-
-- Combining market sentiment with trader performance data can help optimize strategy selection and risk management.
-
-- Sentiment-based analysis can help identify high-risk and high-opportunity trading periods.
-
----
-
-# Conclusion
-
-This project explored the relationship between Bitcoin market sentiment and trader performance using Hyperliquid trading data and the Fear & Greed Index.
-
-The analysis demonstrated that market sentiment significantly impacts:
-
-- Trading activity
-- Trader profitability
-- Market participation
-- Risk-taking behavior
-- Profit volatility
-
-The findings suggest that sentiment indicators can be useful tools for improving trading strategies, optimizing decision-making, and managing risk under different market conditions.
-
----
-
-# How to Run the Project
-
-Install required libraries:
+## 📦 Install Required Libraries
 
 ```bash
 pip install pandas matplotlib seaborn
 ```
 
-Run the analysis script:
+---
+
+## ▶️ Run the Project
 
 ```bash
 python analysis.py
@@ -222,14 +135,12 @@ python analysis.py
 
 ---
 
-# Project Files
+# 📁 Repository Structure
 
 ```text
-crypto-sentiment-analysis/
+bitcoin-sentiment-trader-analysis/
 │
 ├── analysis.py
-├── historical_data.xlsx.csv
-├── fear_greed_index.xlsx.csv
 ├── README.md
 │
 └── images/
@@ -243,14 +154,54 @@ crypto-sentiment-analysis/
 
 ---
 
-# Final Outcome
+# 🔍 Key Insights
 
-This project successfully analyzed how Bitcoin market sentiment influences trader performance and market behavior.
+| 📌 Area | Insight |
+|---|---|
+| 💰 Profitability | Greed periods generally showed higher average profitability |
+| ⚠️ Volatility | Fear periods were associated with unstable trader performance |
+| 📈 Trading Activity | Trading volume increased significantly during bullish sentiment |
+| 🔄 Trading Behavior | Buy activity dominated during Greed phases |
+| 🧠 Trader Psychology | Market sentiment strongly influenced trader confidence |
+| 🏆 Trader Performance | A small group of traders contributed a large portion of total profits |
+| 📊 Strategy Optimization | Sentiment analysis can improve trade timing and risk management |
+| ⚡ Risk Appetite | Traders appeared more aggressive during optimistic market conditions |
 
-The analysis provides meaningful insights that can help traders:
+---
 
-- Improve strategy selection
-- Optimize trade timing
-- Manage risks more effectively
-- Understand market psychology better
-- Make smarter trading decisions
+# 🎯 Final Outcome
+
+✅ Successfully analyzed the relationship between:
+
+- Bitcoin market sentiment  
+- Trader profitability  
+- Trading activity  
+- Market participation  
+- Risk-taking behavior  
+
+The project demonstrates how sentiment indicators can help improve:
+
+- 📈 Trading strategies  
+- ⚠️ Risk management  
+- 🧠 Market understanding  
+- ⏱️ Trade timing decisions  
+
+---
+
+# ⚠️ Dataset Upload Note
+
+The original datasets were not uploaded directly to this repository because the file sizes exceeded GitHub's upload limitations.
+
+To keep the repository lightweight and easier to review, the original dataset links are provided below.
+
+---
+
+## 📈 Hyperliquid Historical Trader Dataset
+
+https://drive.google.com/file/d/1IAfLZwu6rJzyWKgBToqwSmmVYU6VbjVs/view?usp=sharing
+
+---
+
+## 📊 Bitcoin Fear & Greed Index Dataset
+
+https://drive.google.com/file/d/1PgQC0tO8XN-wqkNyghWc_-mnrYv_nhSf/view?usp=sharing
