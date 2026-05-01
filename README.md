@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
 This project explores the relationship between **Bitcoin market sentiment** and **trader performance** using:
 
@@ -17,7 +17,7 @@ This project explores the relationship between **Bitcoin market sentiment** and 
 | 📈 Hyperliquid Historical Data | Historical trader activity and trading performance |
 | 📊 Fear & Greed Index | Daily Bitcoin market sentiment classification |
 
-The goal of this analysis is to identify how market psychology influences:
+The objective of this analysis is to understand how market psychology influences:
 
 - 💰 Trader profitability  
 - 📈 Trading volume  
@@ -25,7 +25,7 @@ The goal of this analysis is to identify how market psychology influences:
 - 🔄 Buy/Sell activity  
 - 🧠 Market participation patterns  
 
-> 📍 Complete preprocessing, analysis workflow, and implementation logic are available in `analysis.py`.
+> 📍 Complete preprocessing, analysis workflow, and implementation details are available in `analysis.py`.
 
 ---
 
@@ -46,17 +46,54 @@ The goal of this analysis is to identify how market psychology influences:
 
 # ⚙️ Analysis Workflow
 
-| Step | Description |
-|---|---|
-| 1️⃣ | Data Cleaning |
-| 2️⃣ | Date Formatting |
-| 3️⃣ | Dataset Merging |
-| 4️⃣ | Exploratory Data Analysis |
-| 5️⃣ | Sentiment-Based Analysis |
-| 6️⃣ | Trader Performance Analysis |
-| 7️⃣ | Profitability Analysis |
-| 8️⃣ | Correlation Analysis |
-| 9️⃣ | Visualization & Insight Generation |
+<div align="center">
+
+```text
+        ┌────────────────────┐
+        │   Load Datasets    │
+        └─────────┬──────────┘
+                  │
+                  ▼
+        ┌────────────────────┐
+        │   Data Cleaning    │
+        └─────────┬──────────┘
+                  │
+                  ▼
+        ┌────────────────────┐
+        │ Date Formatting    │
+        └─────────┬──────────┘
+                  │
+                  ▼
+        ┌────────────────────┐
+        │   Merge Datasets   │
+        └─────────┬──────────┘
+                  │
+                  ▼
+        ┌────────────────────┐
+        │ Exploratory Data   │
+        │     Analysis       │
+        └─────────┬──────────┘
+                  │
+                  ▼
+        ┌────────────────────┐
+        │ Sentiment-Based    │
+        │     Analysis       │
+        └─────────┬──────────┘
+                  │
+                  ▼
+        ┌────────────────────┐
+        │ Trader Performance │
+        │     Analysis       │
+        └─────────┬──────────┘
+                  │
+                  ▼
+        ┌────────────────────┐
+        │ Visualization &    │
+        │ Insight Generation │
+        └────────────────────┘
+```
+
+</div>
 
 ---
 
@@ -66,7 +103,8 @@ The goal of this analysis is to identify how market psychology influences:
 
 ## 📊 Market Sentiment Distribution
 
-![Market Sentiment Distribution](images/sentiment_distribution.png)
+<img width="630" height="531" alt="sentiment_distribution" src="https://github.com/user-attachments/assets/2360988b-e740-4622-8a31-e8be2a587324" />
+
 
 🔍 Shows the distribution of Fear and Greed sentiment categories across the dataset.
 
@@ -74,7 +112,8 @@ The goal of this analysis is to identify how market psychology influences:
 
 ## 💰 Average Trader Profit by Sentiment
 
-![Average Trader Profit](images/pnl_by_sentiment.png)
+<img width="692" height="531" alt="pnl_by_sentiment" src="https://github.com/user-attachments/assets/852611be-3295-4d6e-ab00-f46ef947876b" />
+
 
 🔍 Compares average trader profitability during different sentiment conditions.
 
@@ -82,7 +121,8 @@ The goal of this analysis is to identify how market psychology influences:
 
 ## 📈 Trading Volume Analysis
 
-![Trading Volume](images/trading_volume.png)
+<img width="677" height="531" alt="trading_volume" src="https://github.com/user-attachments/assets/0e6d67db-7d9c-4d72-af26-9a4e16e24aa6" />
+
 
 🔍 Highlights how market sentiment impacts trading activity and participation.
 
@@ -90,7 +130,8 @@ The goal of this analysis is to identify how market psychology influences:
 
 ## 🔄 Buy vs Sell Activity
 
-![Buy vs Sell Activity](images/buy_sell_analysis.png)
+<img width="777" height="531" alt="buy_vs_sell" src="https://github.com/user-attachments/assets/9ff242ca-6a42-48e3-a7cb-1ca09b8e1baf" />
+
 
 🔍 Compares Buy and Sell behavior during Fear and Greed market conditions.
 
@@ -98,15 +139,53 @@ The goal of this analysis is to identify how market psychology influences:
 
 ## 🏆 Top 10 Most Profitable Traders
 
-![Top Traders](images/top_traders.png)
+<img width="843" height="769" alt="top_traders" src="https://github.com/user-attachments/assets/5889e7d8-437b-4361-a58c-aba99935db41" />
+
 
 🔍 Identifies traders with the highest cumulative profitability.
 
 ---
 
+## 📊 Win Rate by Market Sentiment
+
+<img width="684" height="531" alt="win_rate_sentiment" src="https://github.com/user-attachments/assets/bbc34cae-db27-449e-ab58-e40f5e2366e8" />
+
+
+🔍 Displays trader win percentages across different sentiment conditions.
+
+---
+
+## ⚠️ Profit Volatility Analysis
+
+<img width="700" height="531" alt="profit_voltality_sentiment" src="https://github.com/user-attachments/assets/be15ff35-3191-4f91-b1c5-c63dbdd7f9e8" />
+
+🔍 Shows how profit volatility changes during Fear and Greed market phases.
+
+---
+
+## 📉 PnL Distribution Analysis
+
+<img width="878" height="531" alt="pnl_dist_sentimet" src="https://github.com/user-attachments/assets/6a968094-b572-4123-9a0f-41317134b15c" />
+
+
+🔍 Visualizes the spread and consistency of trader profitability.
+
+---
+
+## 📅 Daily Profit Trend
+
+![Daily Profit Trend](images/daily_profit_trend.png)
+
+🔍 Displays daily fluctuations in overall trader profitability.
+
+---
+
 ## 🔥 Correlation Heatmap
 
-![Correlation Heatmap](images/correlation_heatmap.png)
+<img width="837" height="526" alt="corelation_heatmap" src="https://github.com/user-attachments/assets/fde6a686-a89b-4244-bc99-6adf3bca5caf" />
+
+
+
 
 🔍 Displays relationships between important trading metrics such as:
 - Execution Price
@@ -115,25 +194,7 @@ The goal of this analysis is to identify how market psychology influences:
 - Fees
 - Sentiment Value
 
----
 
-# ▶️ Setup & Execution
-
-## 📦 Install Required Libraries
-
-```bash
-pip install pandas matplotlib seaborn
-```
-
----
-
-## ▶️ Run the Project
-
-```bash
-python analysis.py
-```
-
----
 
 # 📁 Repository Structure
 
@@ -149,6 +210,10 @@ bitcoin-sentiment-trader-analysis/
     ├── trading_volume.png
     ├── buy_sell_analysis.png
     ├── top_traders.png
+    ├── win_rate.png
+    ├── volatility.png
+    ├── pnl_distribution.png
+    ├── daily_profit_trend.png
     └── correlation_heatmap.png
 ```
 
@@ -166,6 +231,8 @@ bitcoin-sentiment-trader-analysis/
 | 🏆 Trader Performance | A small group of traders contributed a large portion of total profits |
 | 📊 Strategy Optimization | Sentiment analysis can improve trade timing and risk management |
 | ⚡ Risk Appetite | Traders appeared more aggressive during optimistic market conditions |
+| 📉 Stability | Fear periods resulted in inconsistent profitability patterns |
+| 📅 Market Trends | Daily profit trends fluctuated significantly during volatile phases |
 
 ---
 
@@ -192,16 +259,24 @@ The project demonstrates how sentiment indicators can help improve:
 
 The original datasets were not uploaded directly to this repository because the file sizes exceeded GitHub's upload limitations.
 
-To keep the repository lightweight and easier to review, the original dataset links are provided below.
+To keep the repository lightweight and easier to review, the original dataset links are provided in the Dataset File
 
 ---
 
-## 📈 Hyperliquid Historical Trader Dataset
+# ▶️ Setup & Execution
 
-https://drive.google.com/file/d/1IAfLZwu6rJzyWKgBToqwSmmVYU6VbjVs/view?usp=sharing
+## 📦 Install Required Libraries
+
+```bash
+pip install pandas matplotlib seaborn
+```
 
 ---
 
-## 📊 Bitcoin Fear & Greed Index Dataset
+## ▶️ Run the Project
 
-https://drive.google.com/file/d/1PgQC0tO8XN-wqkNyghWc_-mnrYv_nhSf/view?usp=sharing
+```bash
+python analysis.py
+```
+
+---
