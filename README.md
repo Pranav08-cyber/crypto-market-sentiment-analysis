@@ -204,7 +204,7 @@ bitcoin-sentiment-trader-analysis/
 ├── analysis.py
 ├── README.md
 │
-└── images/
+└── output_images/
     ├── sentiment_distribution.png
     ├── pnl_by_sentiment.png
     ├── trading_volume.png
